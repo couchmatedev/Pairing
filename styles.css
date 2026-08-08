@@ -40,14 +40,14 @@ h3 { margin: 0; font-size: 25px; letter-spacing: -0.025em; }
 .hero-copy { max-width: 720px; margin: 28px 0 34px; color: var(--muted); font-size: clamp(18px, 2vw, 22px); }
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 22px; border-radius: 14px; text-decoration: none; font-weight: 760; }
 .button.primary { background: var(--accent); color: #041816; }
-.prerequisites, .help { padding: 86px 0; border-block: 1px solid var(--border); background: rgba(10, 13, 14, 0.58); }
+.prerequisites, .help, .selection-guide { padding: 86px 0; border-block: 1px solid var(--border); background: rgba(10, 13, 14, 0.58); }
 .section-heading { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr); gap: 70px; align-items: end; margin-bottom: 46px; }
 .section-heading > p { margin: 0; color: var(--muted); font-size: 18px; }
 .requirements { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .requirements article { padding: 26px; border: 1px solid var(--border); border-radius: 22px; background: var(--surface); }
 .requirements article > span, .step-number { color: var(--accent); font-weight: 850; letter-spacing: 0.08em; }
 .requirements h3 { margin-top: 18px; }
-.requirements p, .step-copy p, .security p { margin: 10px 0 0; color: var(--muted); }
+.requirements p, .step-copy p, .security p, .selection-note p { margin: 10px 0 0; color: var(--muted); }
 .steps-section { padding: 110px 0; }
 .steps { display: grid; gap: 44px; margin: 0; padding: 0; list-style: none; }
 .step { display: grid; grid-template-columns: minmax(240px, 0.42fr) minmax(0, 1fr); gap: 42px; align-items: center; padding: 30px; border: 1px solid var(--border); border-radius: 28px; background: linear-gradient(155deg, rgba(27, 32, 33, 0.9), rgba(19, 23, 24, 0.92)); box-shadow: var(--shadow); }
@@ -59,6 +59,9 @@ code { color: var(--accent); overflow-wrap: anywhere; }
 .screenshot img { display: block; width: 100%; height: auto; transition: transform 180ms ease; }
 .screenshot:hover img { transform: scale(1.012); }
 .screenshot.portrait { max-width: 620px; justify-self: center; }
+.selection-guide { padding: 110px 0; }
+.selection-note { margin-top: 44px; padding: 24px 28px; border: 1px solid rgba(46, 199, 176, 0.3); border-radius: 18px; background: var(--accent-soft); }
+.selection-note strong { color: var(--accent); font-size: 18px; }
 .help-grid { display: grid; grid-template-columns: 0.8fr 1fr; gap: 70px; align-items: start; }
 .help ul { margin: 0; padding: 0; list-style: none; }
 .help li { padding: 16px 0 16px 32px; border-bottom: 1px solid var(--border); color: var(--muted); position: relative; }
@@ -82,7 +85,7 @@ code { color: var(--accent); overflow-wrap: anywhere; }
   .header-actions .text-link { display: none; }
   .hero { padding: 58px 0 76px; }
   h1 { font-size: clamp(46px, 15vw, 66px); }
-  .prerequisites, .help, .steps-section { padding: 66px 0; }
+  .prerequisites, .help, .steps-section, .selection-guide { padding: 66px 0; }
   .step { padding: 18px; gap: 24px; border-radius: 22px; }
   .site-footer { flex-direction: column; }
 }
