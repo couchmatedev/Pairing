@@ -48,6 +48,8 @@ h3 { margin: 0; font-size: 25px; letter-spacing: -0.025em; }
 .requirements article > span, .step-number { color: var(--accent); font-weight: 850; letter-spacing: 0.08em; }
 .requirements h3 { margin-top: 18px; }
 .requirements p, .step-copy p, .security p, .selection-note p { margin: 10px 0 0; color: var(--muted); }
+.resource-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; color: var(--accent); font-weight: 760; text-decoration: none; }
+.resource-link:hover { text-decoration: underline; text-underline-offset: 4px; }
 .steps-section { padding: 110px 0; }
 .steps { display: grid; gap: 44px; margin: 0; padding: 0; list-style: none; }
 .step { display: grid; grid-template-columns: minmax(240px, 0.42fr) minmax(0, 1fr); gap: 42px; align-items: center; padding: 30px; border: 1px solid var(--border); border-radius: 28px; background: linear-gradient(155deg, rgba(27, 32, 33, 0.9), rgba(19, 23, 24, 0.92)); box-shadow: var(--shadow); }
